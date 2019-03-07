@@ -1,6 +1,3 @@
-#
-# This file is generated via ./gradlew generatePodspec
-#
 Pod::Spec.new do |spec|
   spec.name                     = 'DodoCardUtils'
   spec.version                  = '0.0.1'

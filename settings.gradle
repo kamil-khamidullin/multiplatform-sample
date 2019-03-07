@@ -7,7 +7,7 @@ pluginManagement {
         }
     }
 }
-rootProject.name = 'DodoPaymentUtils'
 
+rootProject.name = 'dodo-payment'
 
 enableFeaturePreview('GRADLE_METADATA')

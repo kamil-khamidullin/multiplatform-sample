@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/kamilkhamidullin/Projects/dodo-kotlin-native/src/androidMain/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/kamilkhamidullin/Projects/dodo-kotlin-native/src/debug/jniLibs"/></dataSet></merger>
