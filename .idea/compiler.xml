@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.dodopizza.dodo-kotlin-native.androidMain" target="1.6" />
+      <module name="com.dodopizza.dodo-kotlin-native.androidTest" target="1.6" />
+      <module name="com.dodopizza.DodoKotlinNative.androidMain" target="1.6" />
+      <module name="com.dodopizza.DodoKotlinNative.androidTest" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
