@@ -8,6 +8,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'dodo-payment'
+rootProject.name = 'DodoPayment'
 
 enableFeaturePreview('GRADLE_METADATA')

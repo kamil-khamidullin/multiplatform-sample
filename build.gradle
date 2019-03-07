@@ -56,7 +56,7 @@ kotlin {
 
   targetForCocoapods('ios') {
     binaries {
-      framework(frameworkName)
+      framework()
     }
   }
 

@@ -1,8 +1,9 @@
 Pod::Spec.new do |spec|
-  spec.name                     = 'DodoCardUtils'
+  spec.name                     = 'DodoPayment'
   spec.version                  = '0.0.1'
   spec.homepage                 = 'dodopizza.com'
-  spec.source                   = { :git => "Not Published", :tag => "Cocoapods/#{spec.name}/#{spec.version}" }
+  spec.source                   = { :git => "git@github.com:kamil-khamidullin/multiplatform-sample.git", :tag => "#{spec.version}" }
+  spec.resources                = "*"
   spec.ios.deployment_target    = '10.0'
   spec.authors                  = 'Dodo developers'
   spec.license                  = '...'
@@ -11,16 +12,16 @@ Pod::Spec.new do |spec|
 
   spec.prepare_command = <<-SCRIPT
     set -ev
-    /Users/kamilkhamidullin/Projects/dodo-kotlin-native/gradlew  -Pframework=#{spec.name}.framework initializeFramework --stacktrace
+    gradle -Pframework=#{spec.name}.framework initializeFramework --stacktrace
   SCRIPT
 
   spec.script_phases = [
     {
-      :name => 'Build DodoCardUtils',
+      :name => 'Build DodoPayment',
       :shell_path => '/bin/sh',
       :script => <<-SCRIPT
         set -ev
-        /Users/kamilkhamidullin/Projects/dodo-kotlin-native/gradlew  -p "$PODS_TARGET_SRCROOT" "createIos${CONFIGURATION}Artifacts"
+        gradle -p "$PODS_TARGET_SRCROOT" "createIos${CONFIGURATION}Artifacts"
       SCRIPT
     }
   ]
